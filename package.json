@@ -2,7 +2,6 @@
   "name": "@prjctr-react/vite-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://vlada-dr.github.io/test-projector/",
   "type": "module",
   "scripts": {
     "dev": "vite",
