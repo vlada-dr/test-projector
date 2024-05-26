@@ -2,7 +2,7 @@ import "./wdyr.js";
 import { createRoot } from "react-dom/client";
 import { StrictMode, Suspense, lazy } from "react";
 import { App } from "./App";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { Loader } from "./components/Loader/Loader.jsx";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary.jsx"; // Import ErrorBoundary
@@ -25,7 +25,7 @@ const NotFoundPage = lazy(() =>
   import("./pages/NotFoundPage/NotFoundPage.jsx")
 );
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
